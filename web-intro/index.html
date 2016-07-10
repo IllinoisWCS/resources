@@ -25,7 +25,7 @@
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h1>Introduction to Web Development</h1>
+					<h1>Web Dev Part I</h1>
 				</section>
 
 				<section>
@@ -37,9 +37,6 @@
                     <ul>
                         <li>A High-Level Overview</li>
                         <li>Walk-through Tutorial</li>
-						<li>Examples of current web design paradigms</li>
-						<li>Web Development in Industry</li>
-						<li>Available Resources</li>
 						<li>Brainstorm and work on your own website!</li>
                     </ul>
 					<p>Don't worry, if you're out of ideas, we have some.</p>
@@ -47,7 +44,7 @@
 
 				<section>
 					<h2>The Building Blocks of Websites</h2>
-					<!-- TODO: Insert drawing of boxes here -->
+					<img src="web-stack.jpg"></img>
 				</section>
 
 				<section>
@@ -91,219 +88,63 @@
                 </section>
 
                 <section>
-                    <h2>Walk-through Tutorial</h2>
+                    <h2>Tutorial - First Block</h2>
 					<p>Github repository: web-skeleton</p>
-					<p>Slides: illinoiswcs.org/tutorials/web-intro</p>
+					<p>Complete tutorial: web-complete</p>
+					<p>Slides: tutorials/web-intro</p>
                 </section>
 
 				<section>
-					<h2>HTML Code Snippets</h2>
-					<!-- TODO: Clean up HTML Code Snippets based on web-complete -->
 					<section>
-	                    <h2>Basic Frame</h2>
-	                    <pre><code data-trim contendeditable>
-	&lt;!DOCTYPE html lang=&quot;en&quot;&gt;
-	&lt;html&gt;
-	    &lt;head&gt;
-	        Here is where you will find the links to CSS stylesheets
-	    &lt;/head&gt;
-	    &lt;body&gt;
-	        Here is where you will start building your web page - links, navigation bars, lists, paragraphs, headings, etc.
-	    &lt;/body&gt;
-	&lt;/html&gt;
-	                    </code></pre>
-	                </section>
-
-	                <section>
-	                    <h2>Part 1: Text</h2>
-	                    <pre><code data-trim contendeditable>
-	&lt;body&gt;
-		&lt;h1&gt;My First Web Page, Yay!!!!!&lt;/h1&gt;
-		&lt;p&gt;I'm so excited that I'm making my own website!&lt;/p&gt;
-		&lt;p&gt;&lt;strong&gt;This sentence is in bold.&lt;/strong&gt;&lt;/p&gt;
-		&lt;p&gt;&lt;i&gt;This sentence is in italics&lt;/i&gt;&lt;/p&gt;
-	&lt;/body&gt;
-	                    </code></pre>
-	                </section>
-
-	                <section>
-	                    <h2>Part 2: Pictures and Links</h2>
-	                    <p>Here's a picture!</p>
-	                    <pre><code data-trim contendeditable>
-	&lt;img src="almamater.jpg" width="80" height="120" alt="Alma Mater"/&gt;
-	                    </code></pre>
-	                    <p>Here's a link!</p>
-	                    <pre><code data-trim contendeditable>
-	&lt;a href="http://www.illinois.edu"&gt;Illinois Website&lt;/a&gt;
-	                    </code></pre>
-	                    <p>Here's a link within an image!</p>
-	                    <pre><code data-trim contendeditable>
-	&lt;a href="http://www.illinois.edu"&gt;&lt;img src="almamater.jpg" width="80" height="120" alt="Alma Mater"/&gt;&lt;/a&gt;
-	                    </code></pre>
-	                </section>
-
-	                <section>
-	                    <h2>Part 3: Lists</h2>
-	                    <p>Unordered List: many website designers use this to make a navigation bar.</p>
-	                    <pre><code data-trim contendeditable>
-	&lt;ul&gt;
-	    &lt;li&gt;List Item 1&lt;/li&gt;
-	    &lt;li&gt;List Item 2&lt;/li&gt;
-	&lt;/ul&gt;
-	                    </code></pre>
-	                    <p>Ordered Lists</p>
-	                    <pre><code>
-	&lt;ol&gt;
-	    &lt;li&gt;List Item 1&lt;/li&gt;
-	    &lt;li&gt;List Item 2&lt;/li&gt;
-	&lt;/ol&gt;
-	                    </code></pre>
-	                </section>
-
-	                <section>
-	                    <h2>Part 4: Navigation Bar</h2>
-	                    <p>Let’s make a navigation bar with all of your webpages. Notice that we’re using an unordered list. Because we’re going to be using CSS to change its appearance, we’re going to surround the list with a &lt;div&gt; element and give the navbar a class name called “navbar”.</p>
-	                    <pre><code data-trim contendeditable>
-	&lt;div class="navbar"&gt;
-	    &lt;ul&gt;
-	        &lt;li&gt;&lt;a href="index.html"&gt;Home Page&lt;/a&gt;&lt;/li&gt;
-	        &lt;li&gt;&lt;a href="favbooks.html"&gt;Favorite Books&lt;/a&gt;&lt;/li&gt;
-	        &lt;li&gt;&lt;a href="favmovies.html"&gt;Favorite Movies&lt;/a&gt;&lt;/li&gt;
-	        &lt;li&gt;&lt;a href="favplaces.html"&gt;Favorite Places&lt;/a&gt;&lt;/li&gt;
-	        &lt;li&gt;&lt;a href="favfood.html"&gt;Favorite Foods&lt;/a&gt;&lt;/li&gt;
-	    &lt;/ul&gt;
-	&lt;/div&gt;
-	                    </code></pre>
-	                </section>
-				</section>
-
-				<section>
-					<h2>CSS Code Snippets</h2>
-					<!-- TODO: Clean up CSS Code snippets based on web-complete -->
-					<section>
-	                    <p>In EVERY html document, you have to provide a link to your style sheet so that your html pages can access the customizations you put in styles.css.</p>
-	                    <p>Within your head tag, place the following code:</p>
-	                    <pre><code data-trim contendeditable>
-	&lt;link rel="stylesheet" type="text/css" href="styles.css" /&gt;
-	                    </code></pre>
-	                    <ul>
-	                        <li>rel - gives the category of the link</li>
-	                        <li>type - gives the language used in the document</li>
-	                        <li>href - gives the location of the document relative to the current directory</li>
-	                    </ul>
-	                </section>
-
-	                <section>
-	                    <h2>Part 1: Background</h2>
-	                    <p>If you want to change the entire background of all your web pages, here’s how. Give your body a class within your HTML (&lt;body class=”bcenter”&gt;). You can even change the width and have your web page centered.</p>
-	                    <pre><code data-trim contendeditable>
-	.bcenter{
-	    background-color: black;OR
-	    background-image: url(‘ image name ‘) no-repeat center center fixed;
-	    max-width: 960px;
-	    margin: 0 auto;
-	}
-	                    </code></pre>
-	                </section>
-
-	                <section>
-	                    <h2>Part 2: Text</h2>
-	                    <p>Within any &lt;h#&gt; tag (# 1 through 6), or even &lt;p&gt; tags, you can change the font type, color, style, text alignment, anything!</p>
-	                    <pre><code data-trim contendeditable>
-	h1{
-	    font-family: font name like Times New Roman;
-	    color: (color like red, black, blue or use a hex code);
-	    text-align: (center, left, or right);
-	    font-size: #px;
-	    text-transform: (uppercase, lowercase, etc)
-	}
-	                    </code></pre>
-	                </section>
-
-	                <section>
-	                    <h2>Part 3: Navigation Bar</h2>
-	                    <p>Let’s style our navbar now by using the class name we gave it. Because there are two elements within our class, &lt;ul&gt; and &lt;li&gt;, we need to style each one separately. We can also style the &lt;div&gt; itself.</p>
-	                    <pre><code data-trim contendeditable>
-	.navbar{
-	    float: (center, right, left);
-	    padding: #px;
-	    display: block;
-	    width: #px;
-	    background-color: color;
-	    border-radius: #px;
-	}
-	                    </code></pre>
-	                </section>
-
-	                <section>
-	                    <h2>Part 3: Navigation Bar Continued</h2>
-	                    <p>Let’s style the &lt;ul&gt; elements. We need to make sure that the list elements do not have bullets next to them, nor do they just sit on top of one another. We also need to make sure that the elements don’t run longer than the width we set for our website.</p>
-	                    <pre><code data-trim contendeditable>
-	.navbar ul{
-	    list-style-type: none;
-	    margin: #px #px #px #px; (top right bottom left)
-	    padding: #px #px #px #px; (top right bottom left)
-	    overflow: hidden;
-	}
-	                    </code></pre>
-	                </section>
-
-	                <section>
-	                    <h2>Part 3: Navigation Bar Continued</h2>
-	                    <p>Now, let’s style the &lt;li&gt; elements. We want to them to show up all in one line instead of on top of each other (actually, it’s your choice, really).</p>
-	                    <pre><code data-trim contendeditable>
-	.navbar li{
-	    display: inline;
-	    padding: #px #px #px #px; (top right bottom left)
-	    font-family: (Times New Roman)
-	    font-style: (bold, italic, etc.)
-	    font-size: #px
-	    text-transform: (uppercase, lowercase, etc.)
-	    text-decoration: (underline, line-through, etc.)
-	}
-	                    </code></pre>
-	                </section>
-
-	                <section>
-	                    <h2>Part 4: Images</h2>
-	                    <pre><code data-trim contendeditable>
-	img{
-	    width: #px;
-	    height: #px;
-	    border-radius: #px; (to produce rounded corners)
-	    box-shadow: #px; (to produce a shadow behind it)
-	    border-style: See handout
-	    margin: #px #px #px #px; (top right bottom left)
-	    padding: #px #px #px #px; (top right bottom left)
-	}
-	                    </code></pre>
-	                </section>
-
-	                <section>
-	                    <h2>Other Tidbits</h2>
-	                    <ul>
-	                        <li>You can style the entire table itself (like giving it a background color or a set width, height etc), table rows, or table cells. </li>
-	                        <li>There are multiple states for links (especially in the navigation bar): hover, active, visited. You can customize each. </li>
-	                        <li>Say you want to style certain cells but not others. If you want to style multiple cells with the same style, add the class attribute to the &lt;td&gt; element in your HTML. If you just want to style a specific cell, add the id attribute.</li>
-	                    </ul>
-	                </section>
-				</section>
-
-				<section>
-					<h2>Javascript Code Snippets</h2>
-					<section>
-						<!-- TODO: Insert Javascript Code snippets here based on web-complete -->
+						<h2>HTML Code Snippets</h2>
+						<!-- TODO: Insert the HTML code snippets used in web-complete -->
 					</section>
 				</section>
 
 				<section>
-					<h2>Examples of Current Web Design Paradigms</h2>
+					<section>
+						<h2>CSS Code Snippets</h2>
+						<!-- TODO: Insert the CSS code snippets used in web-complete -->
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>JS Code Snippets</h2>
+						<!-- TODO: Insert the JS code snippets used in web-complete -->
+					</section>
+				</section>
+
+				<section>
+					<h2>Congratulations! Part I done!</h2>
+				</section>
+
+				<section>
+					<h1>Web Dev Part II</h1>
+				</section>
+
+				<section>
+					<h1>Break Da Ice</h1>
+				</section>
+
+				<section>
+					<h2>Agenda</h2>
 					<ul>
-						<!-- TODO: Insert links with these as examples -->
-						<li>Parallax Background</li>
-						<li>Navbar - Single-Page Scrolling</li>
-						<li>Navbar - Highlight</li>
+						<li>Examples of current web design paradigms</li>
+						<li>Web Development in Industry</li>
 					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Examples of Current Web Design Paradigms</h2>
+						<ul>
+							<!-- TODO: Insert links with these as examples -->
+							<li>Parallax Background</li>
+							<li>Navbar - Single-Page Scrolling</li>
+							<li>Navbar - Highlight</li>
+						</ul>
+					</section>
 					<section>
 						<h2>Parallax Background</h2>
 						<!-- TODO: Insert code snippets -->
@@ -329,19 +170,6 @@
 						<li>JS Frameworks - AngularJS, React, etc.</li>
 						<li>Web Design Paradigms - Flux/Redux, MVC, etc.</li>
 						<li>Web Security - hashing, HTTP vs. HTTPS, data breaches</li>
-					</ul>
-				</section>
-
-				<section>
-					<h2>Available Resources</h2>
-					<ul>
-						<!-- TODO: Insert links -->
-						<li>W3Schools.com</li>
-						<li>HTML5rocks.com</li>
-						<li>css-tricks.com</li>
-						<li>HH-personal sites</li>
-						<li>Awwwards - Design</li>
-						<li>scotch.io</li>
 					</ul>
 				</section>
 			</div>
