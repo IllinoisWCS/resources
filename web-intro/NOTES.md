@@ -8,24 +8,17 @@ Websites and web applications are becoming increasingly sophisticated and comple
 
 We will focus on the first box, the client-side box, because that is the most visual of all of the steps.
 
-## What is HTML, CSS, and Javascript?
-
-**TODO: Explain the 3 technologies here**
-
-## Tutorial
-
-## What are some examples of current web design paradigms?
-
-**TODO: Explain each paradigm**
-
-### Parallax Backgrounds
-
-### Navigation Bar - Single-Scroll animation
-
-### Navigation Bar - Highlighting
+**TODO: Structure like the 3 web tutorials**
 
 ## Web Development in Industry
 
 There are many technology companies that have built their business off of web applications.
 
 **TODO: Briefly explain all bullet points**
+- A/B Testing
+- Big Data integrations / tools
+- Cloud Computing
+- CSS Frameworks - Bootstrap, Foundation
+- JS Frameworks - AngularJS, React, etc.
+- Web Design Paradigms - Flux/Redux, MVC, etc.
+- Web Security - hashing, HTTP vs. HTTPS, data breaches
