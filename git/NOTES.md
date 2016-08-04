@@ -36,10 +36,22 @@ For your own individual projects, there are 3 separate entities that are linked 
 
 You'll create a new repository on Github. For simplicity, we recommend checking the README box. This makes it an easier workflow.
 
-`git clone <repository url>` fetches the repository from the cloud and makes a local repository on your computer, as well as downloads the actual files. You can add files, edit files, yada yada yada. `git status` lets you see the changes you've made so far. If the change is red, it means it's unstaged, meaning that there isn't a local snapshot of that change yet in your local repository. `git add <files>` stages your local files to be committed to your local repository. At this point, `git status` should show a green change. This means that this change hasn't been pushed to the cloud repository. `git commit` commits these local files (a.k.a. generates the diffs). `git push` pushes these local commits (or diffs) to the cloud repository. `git pull` updates your local repository with the latest diffs from the cloud repository, as well as your local copy of the code with all of the latest files.
+`git clone <repository url>` fetches the repository from the cloud and makes a local repository on your computer, as well as downloads the actual files. You can add files, edit files, yada yada yada.
+
+`git status` lets you see the changes you've made so far. If the change is red, it means it's unstaged, meaning that there isn't a local snapshot of that change yet in your local repository.
+
+`git add <files>` stages your local files to be committed to your local repository. At this point, `git status` should show a green change. This means that this change hasn't been pushed to the cloud repository.
+
+`git commit` commits these local files (a.k.a. generates the diffs).
+
+`git push` pushes these local commits (or diffs) to the cloud repository.
+
+`git pull` updates your local repository with the latest diffs from the cloud repository, as well as your local copy of the code with all of the latest files.
 
 ## Collaborative Workflows
 
 The first workflow is the branching workflow. Every single git repository will have a master branch. You can think of a branch as a certain path of changes and all of the commits can be seen as markers placed down on that path. Sometimes, two or more people want to work on the same project. It's important to not have the files interfere. It's also good practice to keep the master branch clean, meaning that code on the master branch is the most stable for the software to run on. There should be no major glaring bugs. Therefore, to work on different features, users should create branches from the master branch and then merge their changes back into the master branch when they are ready.
 
 The second workflow is the fork/clone/pull-request workflow. Sometimes, your changes to a project are more involved than just a branch or there might be a lot of people working on the same project. Github allows you to fork a project from the master repository (which is most often controlled by an organization) to your own Github repository under your own Github account. Your changes are therefore completely independent from the changes of the master repository. You can then make your changes, make sure that your changes can be merged into the original repository without affecting the original repository and make a pull request. The organization controlling the repository can then look at your pull request and make comments or suggestions. Finally, they can then decide to merge your pull request into the organization's master repository.
+
+**TODO: Add in the tutorial steps here.**
