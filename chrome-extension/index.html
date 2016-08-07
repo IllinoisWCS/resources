@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Chrome Extension Tutorial</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Chrome Extension</h1>
+				</section>
+
+				<section>
+					<h2>Break Da Ice</h2>
+				</section>
+
+				<section>
+					<h2>Chrome Extension Overview</h2>
+					<ul>
+						<li>A way to extend the Google Chrome browser to do different actions.</li>
+						<li>3 types of actions: browser actions, page actions, content scripts</li>
+						<li>Uses HTML, CSS, Javascript</li>
+						<li>Analogy: A fancy Javascript injection into a browser</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Actions</h2>
+					<ul>
+						<li>Browser Actions - affect every page you navigate to with a specific action - e.g. AdBlockPlus</li>
+						<li>Page Actions - affect pages that match a certain URL pattern, usually prompting popups</li>
+						<li>Content Script - affect certain designated pages that match a certain URL pattern and is able to alter the web page's HTML and CSS</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>What We're Building Today</h2>
+					<p>When a user looks at a listing on Airbnb, a popup will display with information about crime in the location of that listing, if available.</p>
+				</section>
+
+				<section>
+					<h2>What is Airbnb?</h2>
+					<ul>
+						<li>Allows people to put up properties for "any"-term rental</li>
+						<li>Allows people to book unique places to stay when traveling</li>
+						<li>A "unicorn" startup - pioneering the home-sharing economy</li>
+						<li>Founded by Brian Chesky, Joe Gebbia</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Components</h2>
+					<ul>
+						<li>Content Script - scrapes the location from the HTML/CSS on the Airbnb listing page</li>
+						<li>Page Action - displays the popup with the relevant crime information</li>
+						<li>Background Script - an overseer in communication between the page action and the content script</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>More Detail</h2>
+					<img src="process.jpg" width=80%>
+				</section>
+
+				<section>
+					<h2>Tutorial</h2>
+					<p>Github repository: chrome-extension-skeleton</p>
+					<p>Complete tutorial: chrome-extension-complete</p>
+					<p>Slides: tutorials/chrome-extension</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
