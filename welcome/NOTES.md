@@ -12,7 +12,7 @@ Let's go around and say your name, hometown, year in school, major and what you'
 
 We have a very busy and fun year planned for us. All experience levels welcome!
 
-For the first 6-7 weeks of the fall semester, we will be having weekly tutorials. We have a pretty diverse set of tutorials developed for you.
+For the first 6-7 weeks of the fall semester, we will be having weekly tutorials. We have a pretty diverse set of tutorials developed for you. But this could definitely change if you all want something different. We are open to do tutorials on technologies that you want to see, and if we don't know much about it, we certainly can try our best to find someone who does know about it.
 
 After the tutorials, we will have a brainstorming session regarding projects. We allow for two opportunities to present: individual presenter or group project. If at any point during the tutorials, you find the tutorial particularly interesting and you would like to expand on that tutorial or develop your own project, feel free to do so and you can present at EOH as an individual at our booth. We will also be brainstorming group projects we can work on too.
 
@@ -24,7 +24,13 @@ Our second presentation deadline is the WCS Spring Awards banquet. This is typic
 
 ## Tutorials
 
-**TODO: Add in the list of the finalized list of tutorials**
+- Git
+- Web Part I: Basic Website
+- Web Part II: Data-binding
+- Slackbot
+- Web Part III: Adding a simple backend
+- Chrome Extension
+- Intro to Data Science with Python
 
 All slides for the tutorials can be found at [illinoiswcs.org/tutorials](http://illinoiswcs.org/tutorials). We have skeleton and complete versions of our tutorials on the [IllinoisWCS](http://github.com/illinoiswcs) Github organization page.
 
@@ -34,8 +40,8 @@ We do have to make a disclaimer in that to make this the best experience for you
 
 We will have a mailing list strictly for announcements. Everyone who's signed in today, we will add to the list.
 
-**TODO: Figure out Facebook Group logistics.** We will also have a Facebook group for any link sharing or general questions.
+We will also have a Facebook group for any link sharing or general questions.
 
-If at any point during the week you have a question or are stuck on something, WCS has office hours from 2 - 3pm every weekday. Berwin and I will be having our office hours in the WCS office on **TODO: Insert day** and **TODO: Insert day**. If you can't make it on our designated days, we have other officers staffing other days.
+If at any point during the week you have a question or are stuck on something, WCS has office hours from 2 - 3pm every weekday. Berwin and I will be having our office hours in the WCS office on Monday and Wednesday. If you can't make it on our designated days, we have other officers staffing other days.
 
 As well, feel free to email us or Facebook message us with any questions as well. We're here to help you and to make this the best experience for you!
