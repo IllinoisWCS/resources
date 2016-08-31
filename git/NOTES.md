@@ -54,4 +54,26 @@ The first workflow is the branching workflow. Every single git repository will h
 
 The second workflow is the fork/clone/pull-request workflow. Sometimes, your changes to a project are more involved than just a branch or there might be a lot of people working on the same project. Github allows you to fork a project from the master repository (which is most often controlled by an organization) to your own Github repository under your own Github account. Your changes are therefore completely independent from the changes of the master repository. You can then make your changes, make sure that your changes can be merged into the original repository without affecting the original repository and make a pull request. The organization controlling the repository can then look at your pull request and make comments or suggestions. Finally, they can then decide to merge your pull request into the organization's master repository.
 
-**TODO: Add in the tutorial steps here.**
+## Tutorial
+Here's a breakdown of what we did at the tutorial:
+
+1. Log into your Github account that you just made.
+2. Search for IllinoisWCS and find the organization in the Users panel.
+3. Click on our organization and search for git-skeleton.
+4. Click on the git-skeleton repository. Now this is the copy on the IllinoisWCS organization so we don't want to affect it if we don't have to. So let's fork the repository (it's all the way near the top right).
+5. Now you should have it forked to your own account. You should see [your username]/git-skeleton.
+6. Find the green Clone or download button and click on it. Copy paste the URL given.
+7. Open a Terminal. Run `git clone [url you just pasted]`.
+8. This created a folder called `git-skeleton` in your home directory. Let's change our directory from our home directory into `git-skeleton` by running `cd git-skeleton`.
+9. There is a file called `README.md`. Open that file in your favorite text editor (any will do) and add your name after the first line of text.
+10. Save and close that file. Return to the terminal. Run `git status`. You should now see a message with a red line saying `modified: README.md`. You're now ready to stage your file to commit.
+11. To stage your README change for committing to the local repository, type `git add .`.
+12. Now, let's run `git status` again. You should now see some more default messages with a green line saying `modified: README.md`. Your change has been staged! Now you're ready to commit.
+13. Run `git commit -m "some message of your choosing"`. This creates the snapshot that we discussed. It's like a stamp in history. Your change has been committed!.
+14. Now if you run `git status` again, you should see some messages about how your branch is 1 commit ahead of `origin/master`. This means, the cloud repository does not yet have your change. Your local repository does. We need to sync the two now.
+15. Run `git push`. Refresh the Github repository web page and you should now see your change reflected in the README.md file. Hooray! You've pushed your first commit to Github!
+16. Now, to complete the final step, let's create a pull request. Click on the button New Pull Request. This will then take you to an overview page where you can see the pull request details with all of the changes. Click Create Pull Request and then add a title and comment. And then click the green Create Pull Request button.
+17. Nice work! Now you've successfully edited a file, put it through all of the version control steps and made a pull request to IllinoisWCS. Expect an invitation from us to join the organization as a member soon :)
+18. P.S. If you're wondering how your operating system / terminal knows that a folder is actually a git repository, go back to the terminal and type `ls -la`. You'll see a hidden `.git` folder. This indicates to the operating system that your folder is actually a git repository. Inside that folder is all sorts of magic storing the snapshots that you create along the way with your commits.
+
+Git is one of the most popular and widely used version control systems in industry and academia. Knowing this skill is really handy when working with other people on projects and eventually on products in industry or research projects in academia. Now, you know the basics! You'll be ready to get started on your own project soon!
