@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Introduction to APIs</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Intro to APIs</h1>
+					<p><small>Emily Chao(elchao2), Berwin Xie(bxie6)</small></p>
+				</section>
+				<section>
+					<h2>What is an API?</h2>
+					<ul>
+						<li>Application Programming Interface</li>
+						<li>Allows developers to integrate already-existing features into their application</li>
+						<li>Saves time, energy, allows for cool data analysis, etc.</li>
+						<li>Most often provided by companies or open-source communities</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Example uses</h2>
+					<ul>
+						<li>Account creation, login, authentication (i.e. Google Login)</li>
+						<li>Social media posting capability (i.e. Tweet, Follow, Like)</li>
+						<li>Accessing data from different services (i.e. CUMTD, Weather.com)</li>
+						<li>Manipulate different data points between applications (i.e. Google Apps Script)</li>
+						<li>Incorporating other features (i.e. Google Maps)</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Visual Components and Data Request Endpoints</h2>
+				</section>
+				<section>
+					<h2>How to gain access to an API</h2>
+					<ul>
+						<li>OAuth tokens</li>
+						<li>Register for API key through developer console</li>
+						<li>Maybe it's just an open API! Hooray!</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Tutorial!</h2>
+					<ul>
+						<li>Let's use JSFiddle</li>
+						<li>Tutorial based on CUMTD API</li>
+						<li>Challenge: Use the Open Movie Database API to create a search engine for movies</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Ethics of using an API</h2>
+					<ul>
+						<li>Maintaining APIs is expensive</li>
+						<li>Many companies will rate-limit requests</li>
+						<li>For smaller or more open APIs, be aware of server downtime and other developers using the API - don't send too many requests!</li>
+						<li>Different cost models - # requests / day for free tier, capacity costs, etc.</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
