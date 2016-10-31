@@ -4,9 +4,11 @@
 
 Websites and web applications are becoming increasingly sophisticated and complex. The architecture has certainly evolved since the first websites were built way back when the Internet started. Now, it is the source of so many businesses today: Google, Facebook, Twitter, eBay, PayPal, Etsy, Amazon, etc.
 
-The current accepted architecture paradigm is the idea of client-side vs. server-side. Client-side means that the client (usually the user) can see and interact with the website. It affects the user interface (what the user sees) and the user experience (what the user ). Server-side means that there is business logic unknown to the client that handles transactions as a result of client interactions.
+The current accepted architecture paradigm is the idea of client-side vs. server-side. Client-side means that the client (usually the user) can see and interact with the website. It affects the user interface (what the user sees) and the user experience (what the user experiences through manipulating different parts of the website or web app). Server-side means that there is business logic unknown to the client that handles transactions as a result of client interactions.
 
 Client-side programming is also known as front-end programming. Server-side programming is known as back-end programming. Sometimes, for a person who knows a bit about both, we say that that person knows full-stack web programming.
+
+A disclaimer: We will use the term websites and web applications often interchangeably. The two have increasingly started to meld together. Historically, websites often described static web pages, pages with no server-side programming is required to serve additional business logic other than just serving the web page itself. Web applications describe interactive web pages in which server-side programming is required to handle business logic.
 
 ![box drawing with different parts](web-stack.jpg)
 
