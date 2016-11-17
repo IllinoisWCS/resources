@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Intro to Chatbots</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Intro to Chatbots</h1>
+					<p><small>Emily Chao(elchao2), Berwin Xie(bxie6)</small></p>
+				</section>
+				<section>
+					<h2>What are Chatbots?</h2>
+					<ul>
+						<li>Used to emulate humans</li>
+						<li>People interact with them to accomplish different tasks</li>
+						<li>A lot more natural than menu systems</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Example uses</h2>
+					<ul>
+						<li>Personal Assistant (i.e. Siri, Google Assistant, etc)</li>
+						<li>Customer Service (Helping people troubleshoot)</li>
+						<li>Conversation Bots</li>
+					</ul>
+				</section>
+				<section>
+					<h2>How they work</h2>
+				</section>
+				<section>
+					<h2>How they work</h2>
+					<ul>
+						<li>Ability to detect user input (text or voice)</li>
+						<li>Process the input into 'tokens' to extract topics</li>
+						<li>Construct a response based on information</li>
+					</ul>
+				</section>
+				<section>
+					<h2>Tutorial!</h2>
+					<ul>
+						<li>Let's take a look at a seminal bot: ELIZA</li>
+						<li>ELIZA was one of the first bots to be used as a psychotherapist</li>
+						<li>Although it is very limiting, it provides a good overview of how early bots worked</li>
+					</ul>
+				</section>
+				<section>
+					<h2>ELIZA</h2>
+					<ul>
+						<li>ELIZA is an early natural language processing computer program created from 1964 to 1966 at the MIT Artificial Intelligence Laboratory by Joseph Weizenbaum.
+						<li>ELIZA simulated conversation by using a 'pattern matching' and substitution methodology that gave users an illusion of understanding on the part of the program</li> 
+						<li>The most famous script, DOCTOR, simulated a Rogerian psychotherapist and used rules, dictated in the script, to respond with non-directional questions to user inputs.</li>
+						<li>ELIZA was one of the first chatterbots, but was also regarded as one of the first programs capable of passing the Turing Test.</li>
+					</ul>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
